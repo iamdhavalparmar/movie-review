@@ -1,2 +1,5 @@
 # movie-review
-It is a movie-review application based on latest version of ROR
+Academic Project
+Topic:- Movie Review Application
+It's a very simple ROR application in which user can signup/login and give revew+rating to their favorite movies 
+User can also add new movies into the app
