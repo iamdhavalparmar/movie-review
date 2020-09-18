@@ -1,0 +1,18 @@
+<% if !user_signed_in? %>
+<div class="jumbotron">
+  <h1> Your Faviorite Movies Revied </h1>
+  <p> Hashtag, hooodie mumblercore selfies. Authentic keffiyeh leggings kickstarter, narwhal jen shorts XOXO Vice Austin cardign. Oragnic drinking vineger freegen pickled</p>
+  <p><%= link_to "Sign Up To Write A Review", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+</div>
+<% end %>
+
+
+<div class="row">
+  <% @movies.each do |movie| %>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <%= link_to (image_tag movie.image.url(:medium), class: 'image'), movie %>
+    </div>
+  </div>
+  <% end %>
+</div>
